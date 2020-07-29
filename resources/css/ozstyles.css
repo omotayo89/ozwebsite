@@ -1,136 +1,191 @@
-/*------------------------------------------------*/
 /* BASIC SETUP */
-/*---------------------- -------------------------*/
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-family: 'DM Sans', sans-serif;
-    background-color: #fff;
-    color: #555;
+body {
+    font-family: 'DM Sans';
     font-weight: 400;
     font-size: 20px;
-    text-rendering: optimizeLegibility;
-    overflow-x: hidden;
 }
 
-.dropdown{
-    margin: 0 auto;
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'DM Sans', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-nav{
-    height: 60px;
-    background: #fff;
-}
+.padded-container {
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: auto;
+    margin-left: auto;
 
-.logo{
-    padding: 10px 0 0 50px;
-    
-    width: auto;
 }
+/* @media (min-width: 576px) {
+    body {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    body {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    body {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    body {
+      max-width: 1140px;
+    }
+  } */
 
-nav ul{
-    float: right;
-    margin-right: 10px;
-}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 
-nav ul li{
-    position: relative;
-    list-style: none;
-    background: #fff;
-    display: inline-block;
-    padding-left: 5px;
-    margin-left: 5px;
-}
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
 
-nav ul li a {
-    display: block;
-    padding: 0 3px;
-    color: rgba(0, 0, 0, 0.37);
-    text-decoration: none;
-    line-height: 60px;
+
+  .action-btn {
+      padding-left: 30px;
+  }
+
+  .action-btn li {
+      padding-left: 30px;
+  }
+  .primary-nav li {
+    padding-left: 30px;
     font-size: 20px;
     font-weight: bolder;
-}
-
-nav ul li a:hover{
-    color: #000;
-    
-}
-
-nav ul ul {
-    position: absolute;
-    top: 60px;
-    display: none;
-    padding-top: 15px;
-    backface-visibility: hidden;
-    
-}
-
-nav ul li:hover > ul {
-    display: block;
-}
-
-nav ul li ul li{
-    width: 300px;
-    float: none;
-    display: list-item;
-    position: relative;
-    margin-left: -30px;
-    background-color: #000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.055);
-    border-radius: 5px;
-}
-
-nav ul li ul li:hover{
-    background-color: #555;
-}
-
-
-
-nav ul li ul li a{
-    color: #fff;
-    background-color: #000;
-    font-size: 80%;
-}
-
-nav ul li ul li a:hover{
-    color: #fff;
-    background-color: #555;
-}
-
-
-.main-nav {
-    margin: 25px 30px 0 0;
-}
-
-.icon-drop{
-    font-size: small;
-}
-
-.btn{
-    display: inline-block;
-    border: 1px solid #000;
-    padding: 0 5px 0 5px;
-}
-
-/* ----- SECTION-PICTURE --------*/
-
+  }
 
 
 section.picture{
-    margin-top: 40px;
-    background-image: url(img/main-bg.jpg);
+    background-image: url(img/bgggg-Recovered.png);
     background-position: center;
     background-size: cover;
-    height:95vh;
+    height: 80vh;
+    
+   
 }
 
-.pic-box{
-    border: 1px solid yellow;
-    width: 20%;
+
+/* EVENTS */
+
+.events {
+  height: 100vh;
+}
+
+.events-text-1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 130%;
+  margin: 30px 0 20px 0;
+}
+
+.events-text-1-span {
+  color: #000;
+}
+
+.carousel-item {
+  background-color: rgb(180, 175, 175);
+  height: 87vh;
+  background-position: fixed;
+  margin-top: 20px;
+}
+
+.events-img {
+  position: absolute;
+  top: 0;
+  left: 28%;
+  min-width: 45%;
+  height: 36rem;
+}
+
+
+/* MEN */
+
+.hr-men {
+  width: 85%;
+  margin-top: 80px;
+}
+
+.men {
+  width: 100%;
+  height: 80vh;
+}
+
+.men-img {
+  width: 75%;
+  transform: translate(16%, 20%);
+}
+
+.men-text {
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+
+/* MOVEMENT */
+
+.hr-movement {
+  width: 85%;
+  margin-bottom: 80px;
+}
+
+.movement {
+  margin-top: 20px;
+}
+
+.movement-header {
+  text-align: center;
+  font-weight: 400;
+  color: #000;
+  text-transform: capitalize;
+  font-size: 230%;
+}
+
+.movement-text {
+  text-align: center;
+  margin: 50px 200px;
+}
+
+.movement-img {
+  height: 27vh;
+}
+
+.row2 {
+  margin: 50px 230px 0 240px;
+}
+
+/* BLOG */
+
+.blog {
+  margin-top: 100px;
+}
+
+.blog-header {
+  font-size: 250%;
+  text-align: center;
+  color: #000;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.hr-blog {
+  width: 60%;
 }

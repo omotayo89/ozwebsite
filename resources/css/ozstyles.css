@@ -1,0 +1,136 @@
+/*------------------------------------------------*/
+/* BASIC SETUP */
+/*---------------------- -------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'DM Sans', sans-serif;
+    background-color: #fff;
+    color: #555;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.dropdown{
+    margin: 0 auto;
+}
+
+nav{
+    height: 60px;
+    background: #fff;
+}
+
+.logo{
+    padding: 10px 0 0 50px;
+    
+    width: auto;
+}
+
+nav ul{
+    float: right;
+    margin-right: 10px;
+}
+
+nav ul li{
+    position: relative;
+    list-style: none;
+    background: #fff;
+    display: inline-block;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 3px;
+    color: rgba(0, 0, 0, 0.37);
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+nav ul li a:hover{
+    color: #000;
+    
+}
+
+nav ul ul {
+    position: absolute;
+    top: 60px;
+    display: none;
+    padding-top: 15px;
+    backface-visibility: hidden;
+    
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li ul li{
+    width: 300px;
+    float: none;
+    display: list-item;
+    position: relative;
+    margin-left: -30px;
+    background-color: #000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+    border-radius: 5px;
+}
+
+nav ul li ul li:hover{
+    background-color: #555;
+}
+
+
+
+nav ul li ul li a{
+    color: #fff;
+    background-color: #000;
+    font-size: 80%;
+}
+
+nav ul li ul li a:hover{
+    color: #fff;
+    background-color: #555;
+}
+
+
+.main-nav {
+    margin: 25px 30px 0 0;
+}
+
+.icon-drop{
+    font-size: small;
+}
+
+.btn{
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 0 5px 0 5px;
+}
+
+/* ----- SECTION-PICTURE --------*/
+
+
+
+section.picture{
+    margin-top: 40px;
+    background-image: url(img/main-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height:95vh;
+}
+
+.pic-box{
+    border: 1px solid yellow;
+    width: 20%;
+}

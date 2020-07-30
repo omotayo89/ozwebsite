@@ -2,13 +2,15 @@
   "name": "pzak",
   "version": "1.0.0",
   "description": "pzak website",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.5.0"
+    "bootstrap": "^4.5.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1"
   }
 }

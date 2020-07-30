@@ -20,6 +20,9 @@ app.get('',(req, res)=> {
   res.render('index', {title: 'Welcome'})
 });
 
+app.get('/register',(req, res)=> {
+  res.render('register', {title: 'register'})
+});
 
 app.get('/json',(req, res)=> {
     var user = {};
